@@ -85,11 +85,11 @@
 		070378E527C17D57001A926C /* PrimeCyrus */ = {
 			isa = PBXGroup;
 			children = (
-				070378E627C17D57001A926C /* PrimeCyrusApp.swift */,
-				070378E827C17D57001A926C /* PrimeFactorsView.swift */,
 				070378EA27C17D58001A926C /* Assets.xcassets */,
 				070378EC27C17D58001A926C /* Preview Content */,
+				070378E627C17D57001A926C /* PrimeCyrusApp.swift */,
 				0703791927C183BE001A926C /* PrimeFactors.swift */,
+				070378E827C17D57001A926C /* PrimeFactorsView.swift */,
 				0703792027C18FF2001A926C /* PrimeFactorsViewModel.swift */,
 			);
 			path = PrimeCyrus;
