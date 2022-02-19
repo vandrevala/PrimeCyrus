@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		070378E727C17D57001A926C /* PrimeCyrusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070378E627C17D57001A926C /* PrimeCyrusApp.swift */; };
-		070378E927C17D57001A926C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070378E827C17D57001A926C /* ContentView.swift */; };
+		070378E927C17D57001A926C /* PrimeFactorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070378E827C17D57001A926C /* PrimeFactorsView.swift */; };
 		070378EB27C17D58001A926C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070378EA27C17D58001A926C /* Assets.xcassets */; };
 		070378EE27C17D58001A926C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070378ED27C17D58001A926C /* Preview Assets.xcassets */; };
 		0703791327C1827A001A926C /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 0703791227C1827A001A926C /* Quick */; };
 		0703791627C18293001A926C /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 0703791527C18293001A926C /* Nimble */; };
 		0703791827C18372001A926C /* PrimeFactorsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0703791727C18372001A926C /* PrimeFactorsSpec.swift */; };
 		0703791A27C183BE001A926C /* PrimeFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0703791927C183BE001A926C /* PrimeFactors.swift */; };
+		0703791D27C1883C001A926C /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 0703791C27C1883C001A926C /* ViewInspector */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +31,7 @@
 /* Begin PBXFileReference section */
 		070378E327C17D57001A926C /* PrimeCyrus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeCyrus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		070378E627C17D57001A926C /* PrimeCyrusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeCyrusApp.swift; sourceTree = "<group>"; };
-		070378E827C17D57001A926C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		070378E827C17D57001A926C /* PrimeFactorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeFactorsView.swift; sourceTree = "<group>"; };
 		070378EA27C17D58001A926C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		070378ED27C17D58001A926C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		070378F327C17D58001A926C /* PrimeCyrusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimeCyrusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +53,7 @@
 			files = (
 				0703791327C1827A001A926C /* Quick in Frameworks */,
 				0703791627C18293001A926C /* Nimble in Frameworks */,
+				0703791D27C1883C001A926C /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				070378E627C17D57001A926C /* PrimeCyrusApp.swift */,
-				070378E827C17D57001A926C /* ContentView.swift */,
+				070378E827C17D57001A926C /* PrimeFactorsView.swift */,
 				070378EA27C17D58001A926C /* Assets.xcassets */,
 				070378EC27C17D58001A926C /* Preview Content */,
 				0703791927C183BE001A926C /* PrimeFactors.swift */,
@@ -141,6 +143,7 @@
 			packageProductDependencies = (
 				0703791227C1827A001A926C /* Quick */,
 				0703791527C18293001A926C /* Nimble */,
+				0703791C27C1883C001A926C /* ViewInspector */,
 			);
 			productName = PrimeCyrusTests;
 			productReference = 070378F327C17D58001A926C /* PrimeCyrusTests.xctest */;
@@ -177,6 +180,7 @@
 			packageReferences = (
 				0703791127C1827A001A926C /* XCRemoteSwiftPackageReference "Quick" */,
 				0703791427C18293001A926C /* XCRemoteSwiftPackageReference "Nimble" */,
+				0703791B27C1883C001A926C /* XCRemoteSwiftPackageReference "ViewInspector" */,
 			);
 			productRefGroup = 070378E427C17D57001A926C /* Products */;
 			projectDirPath = "";
@@ -212,7 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				070378E927C17D57001A926C /* ContentView.swift in Sources */,
+				070378E927C17D57001A926C /* PrimeFactorsView.swift in Sources */,
 				0703791A27C183BE001A926C /* PrimeFactors.swift in Sources */,
 				070378E727C17D57001A926C /* PrimeCyrusApp.swift in Sources */,
 			);
@@ -506,6 +510,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		0703791B27C1883C001A926C /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -518,6 +530,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0703791427C18293001A926C /* XCRemoteSwiftPackageReference "Nimble" */;
 			productName = Nimble;
+		};
+		0703791C27C1883C001A926C /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0703791B27C1883C001A926C /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
