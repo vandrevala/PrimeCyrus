@@ -16,6 +16,8 @@
 		0703791827C18372001A926C /* PrimeFactorsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0703791727C18372001A926C /* PrimeFactorsSpec.swift */; };
 		0703791A27C183BE001A926C /* PrimeFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0703791927C183BE001A926C /* PrimeFactors.swift */; };
 		0703791D27C1883C001A926C /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 0703791C27C1883C001A926C /* ViewInspector */; };
+		0703791F27C18EFE001A926C /* PrimeFactorsViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0703791E27C18EFE001A926C /* PrimeFactorsViewModelSpec.swift */; };
+		0703792127C18FF2001A926C /* PrimeFactorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0703792027C18FF2001A926C /* PrimeFactorsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 		070378F327C17D58001A926C /* PrimeCyrusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimeCyrusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0703791727C18372001A926C /* PrimeFactorsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeFactorsSpec.swift; sourceTree = "<group>"; };
 		0703791927C183BE001A926C /* PrimeFactors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeFactors.swift; sourceTree = "<group>"; };
+		0703791E27C18EFE001A926C /* PrimeFactorsViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeFactorsViewModelSpec.swift; sourceTree = "<group>"; };
+		0703792027C18FF2001A926C /* PrimeFactorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeFactorsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 				070378EA27C17D58001A926C /* Assets.xcassets */,
 				070378EC27C17D58001A926C /* Preview Content */,
 				0703791927C183BE001A926C /* PrimeFactors.swift */,
+				0703792027C18FF2001A926C /* PrimeFactorsViewModel.swift */,
 			);
 			path = PrimeCyrus;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				0703791727C18372001A926C /* PrimeFactorsSpec.swift */,
+				0703791E27C18EFE001A926C /* PrimeFactorsViewModelSpec.swift */,
 			);
 			path = PrimeCyrusTests;
 			sourceTree = "<group>";
@@ -217,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				070378E927C17D57001A926C /* PrimeFactorsView.swift in Sources */,
+				0703792127C18FF2001A926C /* PrimeFactorsViewModel.swift in Sources */,
 				0703791A27C183BE001A926C /* PrimeFactors.swift in Sources */,
 				070378E727C17D57001A926C /* PrimeCyrusApp.swift in Sources */,
 			);
@@ -226,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0703791F27C18EFE001A926C /* PrimeFactorsViewModelSpec.swift in Sources */,
 				0703791827C18372001A926C /* PrimeFactorsSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
