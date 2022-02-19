@@ -1,7 +1,11 @@
 import SwiftUI
 
 struct PrimeFactorsView: View {
-    @State var number: String = ""
+    @ObservedObject private var viewModel: PrimeFactorsViewModel
+
+    init(viewModel: PrimeFactorsViewModel) {
+        self.viewModel = viewModel
+    }
 
     var body: some View {
         VStack {
@@ -10,9 +14,9 @@ struct PrimeFactorsView: View {
                 .padding()
             Text("Type in a Number!!!")
                 .padding()
-            TextField("Your Number...", text: $number)
+            TextField("Your Number...", text: $viewModel.userInput)
                 .padding()
-            Text("RESULTS!")
+            Text(viewModel.formattedListOfPrimes)
                 .padding()
         }
     }
@@ -20,6 +24,7 @@ struct PrimeFactorsView: View {
 
 struct PrimeFactors_Previews: PreviewProvider {
     static var previews: some View {
-        PrimeFactorsView()
+        let viewModel = PrimeFactorsViewModel()
+        return PrimeFactorsView(viewModel: viewModel)
     }
 }

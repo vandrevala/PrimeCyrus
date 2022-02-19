@@ -1,7 +1,9 @@
-public class PrimeFactorsViewModel {
-    public init() {}
+import SwiftUI
 
-    public var userInput = ""
+public class PrimeFactorsViewModel: ObservableObject {
+    @Published public var userInput = ""
+
+    public init() {}
 
     public var formattedListOfPrimes: String {
         if userInput.isEmpty {
