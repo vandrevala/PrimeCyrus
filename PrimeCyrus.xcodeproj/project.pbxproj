@@ -12,6 +12,10 @@
 		070378EB27C17D58001A926C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070378EA27C17D58001A926C /* Assets.xcassets */; };
 		070378EE27C17D58001A926C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070378ED27C17D58001A926C /* Preview Assets.xcassets */; };
 		070378F827C17D58001A926C /* PrimeCyrusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070378F727C17D58001A926C /* PrimeCyrusTests.swift */; };
+		0703791327C1827A001A926C /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 0703791227C1827A001A926C /* Quick */; };
+		0703791627C18293001A926C /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 0703791527C18293001A926C /* Nimble */; };
+		0703791827C18372001A926C /* PrimeFactorsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0703791727C18372001A926C /* PrimeFactorsSpec.swift */; };
+		0703791A27C183BE001A926C /* PrimeFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0703791927C183BE001A926C /* PrimeFactors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,8 @@
 		070378ED27C17D58001A926C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		070378F327C17D58001A926C /* PrimeCyrusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimeCyrusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		070378F727C17D58001A926C /* PrimeCyrusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeCyrusTests.swift; sourceTree = "<group>"; };
+		0703791727C18372001A926C /* PrimeFactorsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeFactorsSpec.swift; sourceTree = "<group>"; };
+		0703791927C183BE001A926C /* PrimeFactors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeFactors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0703791327C1827A001A926C /* Quick in Frameworks */,
+				0703791627C18293001A926C /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +85,7 @@
 				070378E827C17D57001A926C /* ContentView.swift */,
 				070378EA27C17D58001A926C /* Assets.xcassets */,
 				070378EC27C17D58001A926C /* Preview Content */,
+				0703791927C183BE001A926C /* PrimeFactors.swift */,
 			);
 			path = PrimeCyrus;
 			sourceTree = "<group>";
@@ -93,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				070378F727C17D58001A926C /* PrimeCyrusTests.swift */,
+				0703791727C18372001A926C /* PrimeFactorsSpec.swift */,
 			);
 			path = PrimeCyrusTests;
 			sourceTree = "<group>";
@@ -131,6 +141,10 @@
 				070378F527C17D58001A926C /* PBXTargetDependency */,
 			);
 			name = PrimeCyrusTests;
+			packageProductDependencies = (
+				0703791227C1827A001A926C /* Quick */,
+				0703791527C18293001A926C /* Nimble */,
+			);
 			productName = PrimeCyrusTests;
 			productReference = 070378F327C17D58001A926C /* PrimeCyrusTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -163,6 +177,10 @@
 				Base,
 			);
 			mainGroup = 070378DA27C17D57001A926C;
+			packageReferences = (
+				0703791127C1827A001A926C /* XCRemoteSwiftPackageReference "Quick" */,
+				0703791427C18293001A926C /* XCRemoteSwiftPackageReference "Nimble" */,
+			);
 			productRefGroup = 070378E427C17D57001A926C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -198,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				070378E927C17D57001A926C /* ContentView.swift in Sources */,
+				0703791A27C183BE001A926C /* PrimeFactors.swift in Sources */,
 				070378E727C17D57001A926C /* PrimeCyrusApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				070378F827C17D58001A926C /* PrimeCyrusTests.swift in Sources */,
+				0703791827C18372001A926C /* PrimeFactorsSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +492,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0703791127C1827A001A926C /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		0703791427C18293001A926C /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0703791227C1827A001A926C /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0703791127C1827A001A926C /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		0703791527C18293001A926C /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0703791427C18293001A926C /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 070378DB27C17D57001A926C /* Project object */;
 }
