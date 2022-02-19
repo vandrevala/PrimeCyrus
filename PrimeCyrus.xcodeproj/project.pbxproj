@@ -22,13 +22,6 @@
 			remoteGlobalIDString = 070378E227C17D57001A926C;
 			remoteInfo = PrimeCyrus;
 		};
-		070378FE27C17D58001A926C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 070378DB27C17D57001A926C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 070378E227C17D57001A926C;
-			remoteInfo = PrimeCyrus;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +32,6 @@
 		070378ED27C17D58001A926C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		070378F327C17D58001A926C /* PrimeCyrusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimeCyrusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		070378F727C17D58001A926C /* PrimeCyrusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeCyrusTests.swift; sourceTree = "<group>"; };
-		070378FD27C17D58001A926C /* PrimeCyrusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimeCyrusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,13 +43,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		070378F027C17D58001A926C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		070378FA27C17D58001A926C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -81,7 +66,6 @@
 			children = (
 				070378E327C17D57001A926C /* PrimeCyrus.app */,
 				070378F327C17D58001A926C /* PrimeCyrusTests.xctest */,
-				070378FD27C17D58001A926C /* PrimeCyrusUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,24 +135,6 @@
 			productReference = 070378F327C17D58001A926C /* PrimeCyrusTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		070378FC27C17D58001A926C /* PrimeCyrusUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0703790D27C17D58001A926C /* Build configuration list for PBXNativeTarget "PrimeCyrusUITests" */;
-			buildPhases = (
-				070378F927C17D58001A926C /* Sources */,
-				070378FA27C17D58001A926C /* Frameworks */,
-				070378FB27C17D58001A926C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				070378FF27C17D58001A926C /* PBXTargetDependency */,
-			);
-			name = PrimeCyrusUITests;
-			productName = PrimeCyrusUITests;
-			productReference = 070378FD27C17D58001A926C /* PrimeCyrusUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -183,10 +149,6 @@
 						CreatedOnToolsVersion = 13.1;
 					};
 					070378F227C17D58001A926C = {
-						CreatedOnToolsVersion = 13.1;
-						TestTargetID = 070378E227C17D57001A926C;
-					};
-					070378FC27C17D58001A926C = {
 						CreatedOnToolsVersion = 13.1;
 						TestTargetID = 070378E227C17D57001A926C;
 					};
@@ -207,7 +169,6 @@
 			targets = (
 				070378E227C17D57001A926C /* PrimeCyrus */,
 				070378F227C17D58001A926C /* PrimeCyrusTests */,
-				070378FC27C17D58001A926C /* PrimeCyrusUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -223,13 +184,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		070378F127C17D58001A926C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		070378FB27C17D58001A926C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -256,13 +210,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		070378F927C17D58001A926C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -270,11 +217,6 @@
 			isa = PBXTargetDependency;
 			target = 070378E227C17D57001A926C /* PrimeCyrus */;
 			targetProxy = 070378F427C17D58001A926C /* PBXContainerItemProxy */;
-		};
-		070378FF27C17D58001A926C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 070378E227C17D57001A926C /* PrimeCyrus */;
-			targetProxy = 070378FE27C17D58001A926C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -499,50 +441,6 @@
 			};
 			name = Release;
 		};
-		0703790E27C17D58001A926C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ericmeyer.PrimeCyrusUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PrimeCyrus;
-			};
-			name = Debug;
-		};
-		0703790F27C17D58001A926C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ericmeyer.PrimeCyrusUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PrimeCyrus;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -569,15 +467,6 @@
 			buildConfigurations = (
 				0703790B27C17D58001A926C /* Debug */,
 				0703790C27C17D58001A926C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0703790D27C17D58001A926C /* Build configuration list for PBXNativeTarget "PrimeCyrusUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0703790E27C17D58001A926C /* Debug */,
-				0703790F27C17D58001A926C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
